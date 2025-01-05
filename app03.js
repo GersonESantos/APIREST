@@ -2,7 +2,6 @@ import express from 'express'
 
 const app = express()
 
-app.use(express.json()) 
 
 //moc
 const selecoes = [
@@ -43,12 +42,6 @@ app.get('/', (req, res) => {
 
 app.get('/selecoes', (req, res) => {
   res.send(selecoes)
-});
-
-app.post('/selecoes', (req, res) => {
-  
-  selecoes.pushreq.body
-  res.status(201).send("Seleção adicionada com sucesso")
 });
 
 export default app
